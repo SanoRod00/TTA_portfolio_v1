@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio v1</title>
+    <style> 
+    /*styling in General*/
+        body{
+            background-color: black;
+            color: white;
+        }
+        /*styling for home section*/
+        .container{
+            display: flex;
+            height: 100vh;
+           
+        }
+        .same-margin{
+             margin: auto;
+        }
+        .div-1{
+width: 60%;
+        }
+        .skills
+        .content p{
+            height: 50vh;
+        }
+        .content span{
+            color: blueviolet;
+        }
+        .div-2{
+           width: 50%;
+height: 65%;
+margin-top: 10%;
+justify-content: center;
+display: flex;
+        }
+        .div-2 img{
+            border-radius: 5px;
+            justify-content: center;
+ 
+        }
+        /*styling for skills section*/
+        #skills-section{
+            text-align: center;
+        }
+        .skills-container{
+            display: flex;
+            justify-content: center;
+            height: 70vh;
+        }
+        .skill-card{
+            background-color: white;
+        color: black;
+        width: 30%;
+        margin: auto 15px;
+        border-radius: 6px;
+        padding: 80px 3px 30px 3px;
+        }
+        .skill-card h2{
+            font-weight: lighter;
+        }
+        .skill-card p{
+            color: gray;
+       
+        }
+        /*styling for previous work*/
+        #work-section{
+            text-align: center;
+        }
+        .work-container{
+            display: flex;
+            justify-content: center;
+            color: gray;
+            height: 70vh;
+        }
+        .work-content img{
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            
+        }
+        .work-content{
+            border: 1px solid gray;
+        width: 27%;    
+        margin: auto 30px;
+        border-radius: 5px;
+        }
+        .work-content p{
+            padding: 45px 20px 15px 12px;
+            font-size: 14px;
+            font-weight: lighter;
+            text-align: justify;
+        }
+        .work-content button{
+            color: gray;
+            background-color: black;
+            border: 5px solid gray;
+            margin: 10px 0px;
+            padding: 10px 15px;
+            cursor: pointer;
+            border: none;
+            border-radius: 3px;
+        }
+        /*styling for testimonial section*/
+        #testimonial-section{
+        text-align: center;
+        margin: 77px 0px;
+        }
+        .txt-container{
+            display: flex;
+            justify-content: center;
+            height: 80vh;
+        }
+        .test-content{
+            width: 50%;
+            margin: auto;
+        }
+        .test-words{
+            text-align: justify;
+            padding: 0px 15px;
+            margin: 35px;
+        }
+        .test-words p{
+            color: gray;
+            padding: 5px 0px;
+        }
+        .test-content button{
+            border: none;
+            border-radius: 3px;
+           padding: 13px 23px; 
+           font-size: 12px;
+        font-weight: bold;
+        color: white;
+        background-color: green;
+        cursor: pointer;
+        }
+        .test-img img{
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="same-margin div-1">
+                <div class="content">
+                    <h2>Mpano <span>Cedric.</span></h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero maxime ea odio ut, amet dolore perspiciatis, eligendi quibusdam delectus iure quod harum eveniet adipisci asperiores et reprehenderit unde esse velit!</p>
+                </div>
+            </div>
+             <div class="div-2"> 
+            <img src="./pic.jpg" alt="My picture" >
+        </div>
+        </div>
+    </section>
+    <section id="skills-section">
+        <h2>Specialized in.</h2>
+        <div class="skills-container">
+            <div class="skill-card skill-1">
+                <h2>Skill 1</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis doloremque molestiae atque ipsum, aliquid temporibus, deserunt excepturi dolorem quidem qui molestias distinctio. Nisi, alias? Fuga ut consectetur odit quod cum.</p>
+            </div>
+            
+            <div class="skill-card skill-2">
+                <h2>Skill 2</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium nihil dolorum facere temporibus facilis quas omnis eius adipisci non nesciunt! Quam cumque doloribus fugiat sint quibusdam veritatis ad eveniet vel.</p>
+            </div>
+            <div class="skill-card skill-3">
+                <h2>Skill 3</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ab aperiam, distinctio reiciendis ipsam ipsa sit ut voluptatem at perferendis quaerat incidunt nostrum vel numquam blanditiis rerum optio magnam modi?</p>
+            </div>
+        </div>
+    </section>
+    <section id="work-section">
+        <h2>Worked On.</h2>
+        <div class="work-container">
+            <div class="work-content work-1">
+                <img src="./lexscope-0k2mMcdTOYU-unsplash.jpg" width="360" height="220" alt="previous work">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita aspernatur et ratione aliquid, voluptatum nulla ab dicta dignissimos cumque accusantium quod quis tenetur laboriosam non excepturi dolores soluta laudantium. Porro!</p>
+        <button>Continue Reading</button>    
+            </div>
+            
+            <div class="work-content work-2">
+                <img src="./campaign-creators-qCi_MzVODoU-unsplash.jpg" width="360" height="220" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita aspernatur et ratione aliquid, voluptatum nulla ab dicta dignissimos cumque accusantium quod quis tenetur laboriosam non excepturi dolores soluta laudantium. Porro!</p>
+        <button>Continue Reading</button>    
+            </div>
+            <div class="work-content work-3">
+                <img src="./jakub-zerdzicki-U4-I4oH4xlg-unsplash.jpg" width="360" height="220" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita aspernatur et ratione aliquid, voluptatum nulla ab dicta dignissimos cumque accusantium quod quis tenetur laboriosam non excepturi dolores soluta laudantium. Porro!</p>
+        <button>Continue Reading</button>    
+            </div>
+        </div>
+
+    </section>
+    <section id="testimonial-section">
+        <h1>Testimonials</h1>
+        <div class="txt-container">
+            <div class="test-content test-words">
+                <h1>Mr. Donald</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, laboriosam itaque maiores, quaerat deleniti perferendis tempora error sint ut, eius voluptates iure consequatur. Vel dignissimos recusandae, officia velit consectetur iste?</p>
+                <button>Read more></button>
+            </div>
+            <div class="test-content test-img">
+                <img src="./library-of-congress-jPN_oglAjOU-unsplash.jpg" width="300" height="300" alt="Testimonial image">
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
