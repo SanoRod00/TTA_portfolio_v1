@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Layout Example</title>
+    <style>
+        /* Container Flex Layout */
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            flex: 1;
+            background-color: #333;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        /* Main Content */
+        .main-content {
+            flex: 3;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        /* Items in Sidebar */
+        .sidebar-item {
+            padding: 10px;
+            color: #ddd;
+            text-decoration: none;
+        }
+
+        /* Align items in Main Content */
+        .main-content-item {
+            padding: 20px;
+            margin: 10px;
+            background-color: #ccc;
+            width: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar with Vertical Layout -->
+        <div class="sidebar">
+            <a href="#" class="sidebar-item">Home</a>
+            <a href="#" class="sidebar-item">About</a>
+            <a href="#" class="sidebar-item">Contact</a>
+        </div>
+
+        <!-- Main Content with Centered Layout -->
+        <div class="main-content">
+            <div class="main-content-item">Item 1</div>
+            <div class="main-content-item">Item 2</div>
+            <div class="main-content-item">Item 3</div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Movie App</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #f1f1f1;
+        }
+        /* Header */
+        .app-header {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+        }
+        .app-title {
+            font-size: 36px;
+            color: #e50914;
+        }
+        /* Navigation Bar */
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            background-color: #202020;
+            padding: 10px;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+        }
+        .nav-link {
+            color: #b3b3b3;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 10px;
+            
+            
+        }
+        .nav-link:hover {
+            background-color: #e50914;
+            color: #fff;
+            border-radius: 5px;
+        }
+        /* Section Styles */
+        .section {
+            padding: 80px;
+            text-align: center;
+        }
+        .section h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .movies-container {
+            display: flex;
+            justify-content: center;
+            gap: 90px;
+            
+        }
+        .movie-card {
+            width: 200px;
+            color: #fff;
+            text-align: center;
+        }
+        .movie-poster {
+            width: 100%;
+            border-radius: 8px;
+            padding-bottom: 20px;
+            transition: transform 0.3s;
+        }
+        
+        .movie-poster:hover {
+            transform: scale(1.1);
+        }
+        .footer {
+            background-color: #202020;
+            color: #b3b3b3;
+            text-align: center;
+            padding: 15px;
+            font-size: 14px;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="app-header">
+        <h1 class="app-title">CineWorld</h1>
+        <p>Your gateway to the movie universe!</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <a href="#action" class="nav-link">Action</a>
+        <a href="#comedy" class="nav-link">Comedy</a>
+        <a href="#drama" class="nav-link">Drama</a>
+    </nav>
+
+    <!-- Sections for Each Genre -->
+    <section id="action" class="section">
+        <h2>Action Movies</h2>
+        <div class="movies-container">
+            <div class="movie-card">
+                <img src="./images/action.jpg" alt="Action Movie 1" class="movie-poster">
+                <p>Action Movie 1</p>
+            </div>
+            <div class="movie-card">
+                <img src="./images/action.jpg" alt="Action Movie 2" class="movie-poster">
+                <p>Action Movie 2</p>
+            </div>
+            <div class="movie-card">
+                <img src="./images/action.jpg" alt="Action Movie 3" class="movie-poster">
+                <p>Action Movie 3</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="comedy" class="section">
+        <h2>Comedy Movies</h2>
+        <div class="movies-container">
+            <div class="movie-card">
+                <img src="./images/cartoon.jpg" alt="Comedy Movie 1" class="movie-poster">
+                <p>Comedy Movie 1</p>
+            </div>
+            <div class="movie-card">
+                <img src="./images/cartoon.jpg" alt="Comedy Movie 2" class="movie-poster">
+                <p>Comedy Movie 2</p>
+            </div>
+            <div class="movie-card">
+                <img src="./images/cartoon.jpg" alt="Comedy Movie 3" class="movie-poster">
+                <p>Comedy Movie 3</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="drama" class="section">
+        <h2>Drama Movies</h2>
+        <div class="movies-container">
+            <div class="movie-card">
+                <img src="./images/drama.jpg" alt="Drama Movie 1" class="movie-poster">
+                <p>Drama Movie 1</p>
+            </div>
+            <div class="movie-card">
+                <img src="./images/drama.jpg" alt="Drama Movie 2" class="movie-poster">
+                <p>Drama Movie 2</p>
+            </div>
+            <div class="movie-card">
+                <img src="./images/drama.jpg" alt="Drama Movie 3" class="movie-poster">
+                <p>Drama Movie 3</p>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+      &copy; 2024 CineWorld. All rights reserved.
+  </footer>
+</body>
+</html>

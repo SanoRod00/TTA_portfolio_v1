@@ -9,6 +9,25 @@
         body{
             background-color: black;
             color: white;
+            padding: 0;
+            margin: 0;
+        }
+        /*header styling*/
+        header{
+         text-align: center;
+         position: sticky;
+         top: 0;
+         padding: 10px 0px;
+         background-color: aqua;
+        }
+        .navigation-bar ul li{
+            display: inline;
+          
+        }
+        .navigation-bar ul li a{
+            text-decoration: none;
+            color: white;
+            padding: 0px 30px;
         }
         /*styling for home section*/
         .container{
@@ -48,7 +67,7 @@ display: flex;
         .skills-container{
             display: flex;
             justify-content: center;
-            height: 70vh;
+            height: 100vh;
         }
         .skill-card{
             background-color: white;
@@ -68,12 +87,13 @@ display: flex;
         /*styling for previous work*/
         #work-section{
             text-align: center;
+            
         }
         .work-container{
             display: flex;
             justify-content: center;
             color: gray;
-            height: 70vh;
+            height: 100vh;
         }
         .work-content img{
             border-top-left-radius: 5px;
@@ -106,11 +126,12 @@ display: flex;
         #testimonial-section{
         text-align: center;
         margin: 77px 0px;
+        
         }
         .txt-container{
             display: flex;
             justify-content: center;
-            height: 80vh;
+            height: 100vh;
         }
         .test-content{
             width: 50%;
@@ -138,10 +159,29 @@ display: flex;
         .test-img img{
             border-radius: 50%;
         }
+        /*footer styles*/
+        .footer-container{
+            background-color: white;
+            color: black;
+            padding: 10px 0px;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
-    <section>
+    <header>
+        <div class="navigation-bar">
+            <nav>
+            <ul>
+            <li><a href="#home-section">Home</a></li>
+            <li><a href="#skills-section">SKills</a></li>
+            <li><a href="#work-section">Work</a></li>
+            <li><a href="#testimonial-section">Testimonials</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+    <section id="home-section">
         <div class="container">
             <div class="same-margin div-1">
                 <div class="content">
@@ -203,10 +243,14 @@ display: flex;
                 <button>Read more></button>
             </div>
             <div class="test-content test-img">
-                <img src="./library-of-congress-jPN_oglAjOU-unsplash.jpg" width="300" height="300" alt="Testimonial image">
+                <img src="./Donald Trump_ Bio, Age, Height, Family, Net Worth, Business and Political Views.jpg" width="300" height="300" alt="Testimonial image">
             </div>
         </div>
     </section>
-    
+    <footer>
+        <div class="footer-container">
+            <p>&copy;Mpanoced</p>
+        </div>
+    </footer>
 </body>
 </html>
